@@ -13,9 +13,9 @@ namespace CalculatorInCSharp
             int c = 0;
 
             //provide information about the program and ask user to input a number based on the operation the user would like to use
-            Console.WriteLine("This is a calculator that calculates the value between two whole numbers");
-            Console.WriteLine("Please type the corresponding number (1 to 4) to select an operation: ");
-            Console.WriteLine("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+            Console.WriteLine("This is a calculator that calculates the value between two whole numbers\n" +
+                                "Please type the corresponding number (1 to 4) to select an operation: \n" +
+                                "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
 
             //declare an int variable called operation to hold the value of the input from the user
             int operation = Convert.ToInt32(Console.ReadLine());
@@ -52,19 +52,19 @@ namespace CalculatorInCSharp
             {
                 case 1: 
                     c = a + b;
-                    Console.WriteLine("\nThe sum of " + a + " and " + b + " is: " + c);
+                    Console.WriteLine("\nThe sum of " + a + " + " + b + " is: " + c);
                     break;
                 case 2:
                     c = a - b;
-                    Console.WriteLine("\nThe difference of " + a + " and " + b + " is: " + c);
+                    Console.WriteLine("\nThe difference of " + a + " - " + b + " is: " + c);
                     break;
                 case 3:
                     c = a * b;
-                    Console.WriteLine("\nThe product of " + a + " and " + b + " is: " + c);
+                    Console.WriteLine("\nThe product of " + a + " * " + b + " is: " + c);
                     break;
                 case 4:
                     c = a / b;
-                    Console.WriteLine("\nThe quotient of " + a + " and " + b + " is: " + c);
+                    Console.WriteLine("\nThe quotient of " + a + " / " + b + " is: " + c);
                     break;
             }
             Console.ReadLine();
